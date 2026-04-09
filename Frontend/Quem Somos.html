@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Cliníca Mais+</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    img, input, button, select{
+            outline: none;
+        }
+        .verde{
+            background-color: #024959;
+            color: white;
+        }
+
+        .botao-paciente{
+            background-color: #024959;
+            border: 1px solid #024959;
+            transition: 0.3s;
+        }
+        #footer{
+            padding: 50px;
+            background: #024959;
+        }
+
+        .botao-paciente:hover{
+            background-color: white;
+            border: 1px solid #024959;
+            color: #024959;
+        }
+        .card{
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 2px black;
+        }
+
+        .card:hover{
+            transform: scale(1.04);
+        }
+
+        #banner{
+            background-color: #024959;
+        }
+
+        #banner h1{
+            font-weight: 700;
+        }
+
+        #banner button{
+            background-color: #024959;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        #banner button:hover{
+            background-color: white;
+            color: #024959;
+        }
+
+        #controle{
+            background-color: #024959;
+        }
+
+        #atendimento-sessao{
+            padding: 50px;
+            margin: 50px 0;
+            background-color: #a3cad3;
+            box-shadow: 0 0 10px #024959;
+        }
+
+        #atendimento-sessao i{
+            color: #024959;
+        }
+
+        .verde-texto{
+            color: #024959;
+        }
+
+        #scq img{
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px black;
+            border-radius: 5px;
+        }
+
+        .card-agendamento{
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 2px black;
+        }
+
+        #agendamento input, select{
+            padding: 10px;
+        }
+        #agendamento .cpf, .data{
+            width: 100%;
+        }
+        #agendamento .data input{
+            width: 100%;
+        }
+
+        .botan-buscar-horario{
+            margin: 10px 0;
+        }
+        #quem-somos img{
+            box-shadow: 0 0 5px black;
+            border-radius: 5px
+        }
+
+        .quem-somos{
+            margin: 50px 0;
+        }
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href=""><img src="img/logoBranco.png" width="250" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav-target">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="Quem Somos.html">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link mr-5" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary botao-paciente" onclick="login()">Área do Paciente </button>
+            </div>
+        </nav>
+        <div id="loginModal">
+          <h1>Login</h1>
+
+          <div class="formLogin">
+            <input type="text" placeholder="Digite seu e-mail" name="" id="email">
+            <input type="password" placeholder="Digite sua senha" name="senha" id="">
+            <button>Entrar</button>
+            <div class="login-link">
+              <div class="text-center">
+                <p>Não tem conta? <a href="">Cadastre-se</a></p>
+                <p>Esqueceu a senha? <a href="">Recuperar</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="quem-somos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column  justify-content-center">
+                    <h1 class="display-4">Quem Somos</h1>
+                    <p>Na <strong>Cliníca Mais+</strong>, nossa missão é cuidar da sua saúde de forma completa e humanizada. Somos uma clínica multidisciplinar que reúne em um só lugar diversas especialidades médicas e odontológicas, oferecendo <strong>consultas, exames, cirurgias e tratamentos</strong> com qualidade, tecnologia e atenção individualizada.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/quemSomos1.jpg" width="500" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quem-somos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/quemSomos2.jpg" width="500" alt="">
+                </div>
+                <div class="col-md-6 d-flex flex-column  justify-content-center">
+                    <h1 class="display-4">Equipe</h1>
+                    <p>Contamos com uma equipe de <strong>profissionais altamente qualificados</strong>, preparados para atender desde necessidades de prevenção e diagnóstico até procedimentos mais complexos. Nosso compromisso é proporcionar <strong>acolhimento, segurança e eficiência</strong>, garantindo que cada paciente receba o cuidado que merece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quem-somos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column  justify-content-center">
+                    <h1 class="display-4">Cliníca Mais+</h1>
+                    <p>Na Mais+, acreditamos que saúde vai além do tratamento: envolve confiança, proximidade e bem-estar. Por isso, trabalhamos todos os dias para oferecer uma experiência de atendimento moderna, prática e acessível, unindo <strong>medicina, odontologia e exames em um só lugar.</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/quemSomos3.jpg" width="500" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class=" mt-5">
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-4 text-light">
+                    <p>Nossa missão é cuidar da sua saúde com excelência, oferecendo consultas médicas, odontológicas e exames com qualidade e confiança.</p>
+                    <img src="img/Mais+.png" width="250" alt="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase text-light">Links ùteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="indexbootsrap.html" class="text-light text-decoration-none">Ínicio</a></li>
+                        <li><a href="Quem Somos.html" class="text-light text-decoration-none">Quem Somos</a></li>
+                        <li><a href="especialidades.html" class="text-light text-decoration-none">Especialidades</a></li>
+                        <li><a href="agendamento.html" class="text-light text-decoration-none">Agendamentos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contato</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-uppercase text-light">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-light text-decoration-none">Rua da Saúde, 123 - São Paulo/SP</a></li>
+                        <li><a href="" class="text-light text-decoration-none">(11) 912345678</a></li>
+                        <li><a href="" class="text-light text-decoration-none">contato@clinicamais.com.br</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            <hr class="border-light">
+            <div class="text-center text-light">
+                <p class="mb-0">&copy; 2025 Clínica Mais+. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+</html>
