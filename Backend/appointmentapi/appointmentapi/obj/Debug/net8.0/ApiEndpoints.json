@@ -1,0 +1,164 @@
+[
+  {
+    "ContainingType": "appointmentapi.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "appointmentapi.DTOs.Auth.UserLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "appointmentapi.DTOs.Auth.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/ResetPassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "appointmentapi.DTOs.Auth.ResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.TimeSlotController",
+    "Method": "GetAvaibleSlots",
+    "RelativePath": "api/TimeSlot/Available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "specialtyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.TimeSlotController",
+    "Method": "GenerateDailySlots",
+    "RelativePath": "api/TimeSlot/Generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "specialtyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.TimeSlotController",
+    "Method": "GetWeeklyAvailableSlots",
+    "RelativePath": "api/TimeSlot/WeeklyAvailable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "specialtyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "weekStart",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.UnitSpecialtyController",
+    "Method": "GetSpecialties",
+    "RelativePath": "api/UnitSpecialty/Specialties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "appointmentapi.Controllers.UnitSpecialtyController",
+    "Method": "GetUnitsBySpecialty",
+    "RelativePath": "api/UnitSpecialty/specialty/{specialtyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "specialtyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[appointmentapi.DTOs.UnitSpecialty.UnitDto, appointmentapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
